@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comandacamarero.ConfiguracionComandaControlador">
+
+    <VBox layoutX="20.0" layoutY="10.0" prefHeight="359.0" prefWidth="362.0" spacing="10">
+
+        <Text style="-fx-font-weight: bold; -fx-font-size: 14;" text="Comida:" />
+        <HBox spacing="5">
+            <RadioButton fx:id="radioPizza" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Pizza" />
+            <RadioButton fx:id="radioHamburguesa" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Hamburguesa" />
+            <RadioButton fx:id="radioPlatoCombinado" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Plato Combinado" />
+        </HBox>
+
+        <Separator prefHeight="10.0" prefWidth="362.0" />
+
+        <Text style="-fx-font-weight: bold; -fx-font-size: 14;" text="Bebida:" />
+        <HBox spacing="5">
+            <RadioButton fx:id="radioRefresco" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Refresco" />
+            <RadioButton fx:id="radioAgua" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Agua" />
+            <RadioButton fx:id="radioZumo" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Zumo" />
+        </HBox>
+
+        <Separator prefHeight="14.0" prefWidth="362.0" />
+
+        <!-- Mover la etiqueta Forma de Pago arriba de los CheckBox -->
+        <Text style="-fx-font-weight: bold; -fx-font-size: 14;" text="Forma de Pago:" wrappingWidth="102.8876953125" />
+
+        <HBox spacing="10">
+            <CheckBox fx:id="descuento" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Descuento" />
+            <CheckBox fx:id="tarjeta" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Pago con Tarjeta" />
+        </HBox>
+
+        <Separator prefHeight="0.0" prefWidth="362.0" />
+
+        <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="Comentarios:" />
+        <TextArea fx:id="areaTexto" prefHeight="80.0" prefWidth="243.0" promptText="Escribe aquí..." wrapText="true" />
+
+    </VBox>
+
+    <Label fx:id="mesa" alignment="CENTER" layoutX="414.0" layoutY="68.0" prefHeight="26.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: white;" />
+    <Label fx:id="comensal" alignment="CENTER" layoutX="414.0" layoutY="115.0" prefHeight="26.0" prefWidth="148.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: white;" />
+
+    <Button onAction="#resumenComanda" layoutX="450.0" layoutY="260.0" mnemonicParsing="false" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Siguiente" />
+    <Button fx:id="botonCancelar" onAction="#volverSeleccionComensal" layoutX="450.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Cancelar" />
+
+</AnchorPane>

@@ -1,0 +1,27 @@
+
+/* Estilo para el hipervínculo de la Barra */
+Hyperlink {
+    -fx-font-size: 16;
+    -fx-text-fill: white; /* Texto en color blanco para el hipervínculo */
+}
+
+/* Estilo para la Barra (cuadrado gris) */
+#barra {
+    -fx-fill: #808080; /* Color gris para el fondo de la barra */
+    -fx-stroke: BLACK;
+    -fx-text-fill: #ffffff; /* Color blanco para el texto de la barra */
+}
+
+/* Estilo específico para la etiqueta "Sala" */
+Label#salaLabel {
+    -fx-background-color: white; /* Fondo blanco para la Sala */
+    -fx-text-fill: black; /* Texto en color negro para la Sala */
+    -fx-font-weight: bold;
+}
+
+/* Estilo específico para la etiqueta "Terraza" */
+Label#terrazaLabel {
+    -fx-background-color: white; /* Fondo blanco para la Terraza */
+    -fx-text-fill: black; /* Texto en color negro para la Terraza */
+    -fx-font-weight: bold;
+}

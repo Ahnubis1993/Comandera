@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comandacamarero.SeleccionComensal">
+    <Label alignment="CENTER" layoutX="199.0" layoutY="50.0" prefHeight="44.0" prefWidth="203.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-background-color: white;" text="Seleccion Comensal">
+    </Label>
+    <ListView fx:id="listaComensales" layoutX="178.0" layoutY="107.0" prefHeight="200.0" prefWidth="250.0" />
+    <Button layoutX="109.0" layoutY="333.0" mnemonicParsing="false" onAction="#volverEleccionMesa" text="Cancelar" />
+    <Button layoutX="445.0" layoutY="333.0" mnemonicParsing="false" onAction="#elegirComensal" text="Siguiente" />
+   <Label fx:id="etiquetaMesa" alignment="CENTER" layoutX="187.0" layoutY="333.0" prefHeight="26.0" prefWidth="229.0" style="-fx-font-size: 17; -fx-font-weight: bold; -fx-background-color: white;" text="Label" />
+</AnchorPane>

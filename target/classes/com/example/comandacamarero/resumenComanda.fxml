@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comandacamarero.ResumenComandaControlador">
+
+    <!-- Nombre del camarero -->
+    <Label fx:id="nombreCamarero" alignment="CENTER" layoutX="105.0" layoutY="41.0" prefHeight="27.0" prefWidth="325.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-color: white;" />
+
+    <!-- Visualización de la comanda -->
+    <VBox alignment="CENTER" layoutX="105.0" layoutY="68.0" prefHeight="227.0" prefWidth="390.0" spacing="10">
+
+        <!-- Puedes personalizar aquí la visualización de la comanda -->
+        <ListView fx:id="listaComanda" prefHeight="200" prefWidth="490.0" />
+    </VBox>
+
+    <!-- Botones -->
+    <HBox alignment="CENTER" layoutX="20.0" layoutY="340.0" prefHeight="40.0" prefWidth="560.0" spacing="20">
+        <Button layoutX="160.0" layoutY="314.0" onAction="#anadirComensal" text="Añadir Comensal" />
+        <Button layoutX="333.0" layoutY="315.0" onAction="#procesarComanda" text="Procesar Comanda" />
+        <Button layoutX="480.0" layoutY="315.0" onAction="#cancelarComanda" text="Cancelar Comanda" />
+    </HBox>
+</AnchorPane>
